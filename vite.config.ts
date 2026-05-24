@@ -14,7 +14,10 @@ export default defineConfig({
     tsConfigPaths(),
     tailwindcss(),
     tanstackStart({
-      server: { entry: "src/server.ts" }
+      server: { entry: "src/server.ts" },
+      prerender: {
+        routes: ["/"]
+      }
     }),
     react()
   ]
