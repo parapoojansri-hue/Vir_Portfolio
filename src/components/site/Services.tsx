@@ -4,69 +4,93 @@ import {
 } from "lucide-react";
 
 const services = [
-  { 
-    icon: Globe, 
-    t: "Website Development", 
+  {
+    icon: Globe,
+    t: "Website Development",
     d: "Performance-tuned, SEO-ready web platforms with modern frameworks.",
-    color: "from-blue-500/10 via-blue-500/5 to-transparent border-blue-500/20 hover:border-blue-500/40 hover:shadow-blue-500/10",
-    badgeColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
-    label: "Web"
+    gradient: "from-blue-500 to-indigo-600",
+    bg: "from-blue-500/12 via-blue-500/5 to-transparent",
+    border: "border-blue-500/20 hover:border-blue-400/50",
+    glow: "hover:shadow-[0_0_35px_rgba(59,130,246,0.2)]",
+    badge: "bg-blue-500/15 text-blue-300 border-blue-500/25",
+    label: "Web",
   },
-  { 
-    icon: Smartphone, 
-    t: "Mobile App Development", 
+  {
+    icon: Smartphone,
+    t: "Mobile App Development",
     d: "Cross-platform mobile apps with native feel and offline capability.",
-    color: "from-indigo-500/10 via-indigo-500/5 to-transparent border-indigo-500/20 hover:border-indigo-500/40 hover:shadow-indigo-500/10",
-    badgeColor: "bg-indigo-500/10 text-indigo-400 border-indigo-500/20",
-    label: "Mobile"
+    gradient: "from-indigo-500 to-purple-600",
+    bg: "from-indigo-500/12 via-indigo-500/5 to-transparent",
+    border: "border-indigo-500/20 hover:border-indigo-400/50",
+    glow: "hover:shadow-[0_0_35px_rgba(99,102,241,0.2)]",
+    badge: "bg-indigo-500/15 text-indigo-300 border-indigo-500/25",
+    label: "Mobile",
   },
-  { 
-    icon: Palette, 
-    t: "UI/UX Design", 
+  {
+    icon: Palette,
+    t: "UI/UX Design",
     d: "Design systems and product experiences that convert and delight.",
-    color: "from-pink-500/10 via-pink-500/5 to-transparent border-pink-500/20 hover:border-pink-500/40 hover:shadow-pink-500/10",
-    badgeColor: "bg-pink-500/10 text-pink-400 border-pink-500/20",
-    label: "Creative"
+    gradient: "from-pink-500 to-rose-600",
+    bg: "from-pink-500/12 via-pink-500/5 to-transparent",
+    border: "border-pink-500/20 hover:border-pink-400/50",
+    glow: "hover:shadow-[0_0_35px_rgba(236,72,153,0.2)]",
+    badge: "bg-pink-500/15 text-pink-300 border-pink-500/25",
+    label: "Creative",
   },
-  { 
-    icon: BrainCircuit, 
-    t: "AI Integration", 
+  {
+    icon: BrainCircuit,
+    t: "AI Integration",
     d: "LLMs, computer vision, and intelligent automation built into your stack.",
-    color: "from-rose-500/10 via-rose-500/5 to-transparent border-rose-500/20 hover:border-rose-500/40 hover:shadow-rose-500/10",
-    badgeColor: "bg-rose-500/10 text-rose-400 border-rose-500/20",
-    label: "Cognitive"
+    gradient: "from-rose-500 to-red-600",
+    bg: "from-rose-500/12 via-rose-500/5 to-transparent",
+    border: "border-rose-500/20 hover:border-rose-400/50",
+    glow: "hover:shadow-[0_0_35px_rgba(244,63,94,0.2)]",
+    badge: "bg-rose-500/15 text-rose-300 border-rose-500/25",
+    label: "Cognitive",
   },
-  { 
-    icon: Wrench, 
-    t: "Maintenance & Support", 
+  {
+    icon: Wrench,
+    t: "Maintenance & Support",
     d: "Proactive monitoring, updates, and on-call engineering for production.",
-    color: "from-amber-500/10 via-amber-500/5 to-transparent border-amber-500/20 hover:border-amber-500/40 hover:shadow-amber-500/10",
-    badgeColor: "bg-amber-500/10 text-amber-400 border-amber-500/20",
-    label: "Reliability"
+    gradient: "from-amber-500 to-yellow-600",
+    bg: "from-amber-500/12 via-amber-500/5 to-transparent",
+    border: "border-amber-500/20 hover:border-amber-400/50",
+    glow: "hover:shadow-[0_0_35px_rgba(245,158,11,0.2)]",
+    badge: "bg-amber-500/15 text-amber-300 border-amber-500/25",
+    label: "Reliability",
   },
-  { 
-    icon: Rocket, 
-    t: "Startup MVP Development", 
-    d: "Idea-to-MVP in weeks with a launch-ready product and feedback loop.",
-    color: "from-orange-500/10 via-orange-500/5 to-transparent border-orange-500/20 hover:border-orange-500/40 hover:shadow-orange-500/10",
-    badgeColor: "bg-orange-500/10 text-orange-400 border-orange-500/20",
-    label: "Launch"
+  {
+    icon: Rocket,
+    t: "Digital Transformation",
+    d: "Comprehensive strategies to modernize enterprise architecture and workflows.",
+    gradient: "from-orange-500 to-amber-600",
+    bg: "from-orange-500/12 via-orange-500/5 to-transparent",
+    border: "border-orange-500/20 hover:border-orange-400/50",
+    glow: "hover:shadow-[0_0_35px_rgba(249,115,22,0.2)]",
+    badge: "bg-orange-500/15 text-orange-300 border-orange-500/25",
+    label: "Transform",
   },
-  { 
-    icon: Cloud, 
-    t: "Cloud Deployment", 
+  {
+    icon: Cloud,
+    t: "Cloud Deployment",
     d: "CI/CD, edge networks, and zero-downtime deployments on modern cloud.",
-    color: "from-emerald-500/10 via-emerald-500/5 to-transparent border-emerald-500/20 hover:border-emerald-500/40 hover:shadow-emerald-500/10",
-    badgeColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
-    label: "Cloud"
+    gradient: "from-emerald-500 to-teal-600",
+    bg: "from-emerald-500/12 via-emerald-500/5 to-transparent",
+    border: "border-emerald-500/20 hover:border-emerald-400/50",
+    glow: "hover:shadow-[0_0_35px_rgba(16,185,129,0.2)]",
+    badge: "bg-emerald-500/15 text-emerald-300 border-emerald-500/25",
+    label: "Cloud",
   },
-  { 
-    icon: Code2, 
-    t: "Custom Software", 
+  {
+    icon: Code2,
+    t: "Custom Software",
     d: "Bespoke enterprise systems tailored to your operations and growth.",
-    color: "from-cyan-500/10 via-cyan-500/5 to-transparent border-cyan-500/20 hover:border-cyan-500/40 hover:shadow-cyan-500/10",
-    badgeColor: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-    label: "Tailored"
+    gradient: "from-cyan-500 to-blue-600",
+    bg: "from-cyan-500/12 via-cyan-500/5 to-transparent",
+    border: "border-cyan-500/20 hover:border-cyan-400/50",
+    glow: "hover:shadow-[0_0_35px_rgba(6,182,212,0.2)]",
+    badge: "bg-cyan-500/15 text-cyan-300 border-cyan-500/25",
+    label: "Tailored",
   },
 ];
 
@@ -74,35 +98,39 @@ export function Services() {
   return (
     <Section
       id="services"
-      eyebrow="Services"
-      title={<>Enterprise-grade <span className="text-gradient">engineering capabilities</span></>}
-      description="From idea to production, our team ships modern, scalable, and intelligent software for startups and enterprises."
+      eyebrow="Services & Solutions"
+      title={<>Enterprise technology <span className="text-gradient">consulting &amp; digital solutions</span></>}
+      description="Empowering global businesses with next-generation digital transformation, AI integration, and robust cloud infrastructure."
     >
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {services.map((s) => (
           <div
             key={s.t}
-            className={`group relative overflow-hidden rounded-3xl border bg-secondary/20 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-card ${s.color}`}
+            className={`group relative overflow-hidden rounded-3xl border bg-gradient-to-br ${s.bg} ${s.border} ${s.glow} p-6 transition-all duration-300 hover:-translate-y-1.5`}
           >
-            <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-primary/5 blur-2xl opacity-0 transition-opacity group-hover:opacity-100" />
+            {/* Decorative orb */}
+            <div className={`absolute -right-8 -top-8 h-24 w-24 rounded-full bg-gradient-to-br ${s.gradient} opacity-10 blur-2xl transition-all group-hover:opacity-25`} />
+
             <div className="relative">
-              <div className="flex justify-between items-start">
-                <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-primary text-primary-foreground shadow-glow group-hover:scale-105 transition-transform">
-                  <s.icon className="h-5 w-5" />
+              <div className="flex items-start justify-between mb-5">
+                {/* Icon box */}
+                <div className={`grid h-12 w-12 place-items-center rounded-2xl bg-gradient-to-br ${s.gradient} shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  <s.icon className="h-5 w-5 text-white" />
                 </div>
-                <span className={`rounded-md border px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider ${s.badgeColor}`}>
+                {/* Badge */}
+                <span className={`rounded-full border px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider ${s.badge}`}>
                   {s.label}
                 </span>
               </div>
-              
-              <h3 className="mt-5 font-display text-lg font-bold text-foreground group-hover:text-accent transition-colors">
+
+              <h3 className="font-display text-base font-bold text-foreground leading-tight group-hover:text-white transition-colors">
                 {s.t}
               </h3>
-              
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
-              
-              <div className="mt-5 inline-flex items-center gap-1.5 text-xs font-semibold text-accent opacity-0 group-hover:opacity-100 transition-opacity">
-                Learn more <span className="transform transition-transform group-hover:translate-x-1">→</span>
+              <div className={`mt-1.5 h-0.5 w-6 rounded-full bg-gradient-to-r ${s.gradient} opacity-60`} />
+              <p className="mt-3 text-xs leading-relaxed text-muted-foreground">{s.d}</p>
+
+              <div className="mt-5 flex items-center gap-1 text-[11px] font-semibold text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity">
+                Explore <span className="transition-transform group-hover:translate-x-1">→</span>
               </div>
             </div>
           </div>

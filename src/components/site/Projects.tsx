@@ -1,5 +1,5 @@
 import { Section } from "./Section";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -56,9 +56,9 @@ export function Projects() {
   return (
     <Section
       id="projects"
-      eyebrow="Featured Projects"
-      title={<>Production work, <span className="text-gradient">shipped to real users</span></>}
-      description="A selection of platforms we have designed, built, and deployed."
+      eyebrow="Case Studies & Solutions"
+      title={<>Enterprise solutions, <span className="text-gradient">shipped to real users</span></>}
+      description="A selection of enterprise platforms we have designed, built, and deployed."
     >
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((p) => (
@@ -97,17 +97,7 @@ export function Projects() {
                       <ExternalLink className="h-4 w-4" />
                     </a>
                   )}
-                  {p.github && (
-                    <a
-                      href={p.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="GitHub Repository"
-                      className="rounded-lg glass p-2 text-muted-foreground transition-colors hover:text-accent"
-                    >
-                      <Github className="h-4 w-4" />
-                    </a>
-                  )}
+
                 </div>
               </div>
 

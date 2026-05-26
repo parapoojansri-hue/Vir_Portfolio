@@ -27,26 +27,12 @@ export function Footer() {
             
             <div className="mt-6 flex flex-wrap gap-6">
               <div>
-                <span className="text-[9px] uppercase tracking-wider text-zinc-500 block mb-2">Poojan Sri Para</span>
+                <span className="text-[9px] uppercase tracking-wider text-zinc-500 block mb-2">Connect With Us</span>
                 <div className="flex gap-1.5">
                   {[
-                    { Icon: Github, href: "https://github.com/parapoojansri-hue" },
-                    { Icon: Linkedin, href: "https://www.linkedin.com/in/poojan-sri-para-9b84a7399" },
-                    { Icon: Mail, href: "mailto:parapoojansri@gmail.com" },
-                  ].map(({ Icon, href }, i) => (
-                    <a key={i} href={href} target="_blank" rel="noreferrer" className="grid h-9 w-9 place-items-center rounded-lg bg-white/5 border border-white/10 text-zinc-400 transition-colors hover:text-white hover:bg-white/10">
-                      <Icon className="h-3.5 w-3.5" />
-                    </a>
-                  ))}
-                </div>
-              </div>
-              <div className="border-l border-zinc-800 pl-6">
-                <span className="text-[9px] uppercase tracking-wider text-zinc-500 block mb-2">Arvind Swamy</span>
-                <div className="flex gap-1.5">
-                  {[
-                    { Icon: Github, href: "https://github.com/iarvindswamy" },
-                    { Icon: Linkedin, href: "https://www.linkedin.com/in/iarvindswamy" },
-                    { Icon: Mail, href: "mailto:arvindswamy@gmail.com" },
+                    { Icon: Linkedin, href: "https://linkedin.com/company/vir-technologies" },
+                    { Icon: Github, href: "https://github.com/vir-technologies" },
+                    { Icon: Mail, href: "mailto:ceo@virtechnologies.in" },
                   ].map(({ Icon, href }, i) => (
                     <a key={i} href={href} target="_blank" rel="noreferrer" className="grid h-9 w-9 place-items-center rounded-lg bg-white/5 border border-white/10 text-zinc-400 transition-colors hover:text-white hover:bg-white/10">
                       <Icon className="h-3.5 w-3.5" />
@@ -59,7 +45,7 @@ export function Footer() {
           
           <FooterCol title="Navigate" links={[
             { l: "About", h: "#about" }, { l: "Services", h: "#services" },
-            { l: "Projects", h: "#projects" }, { l: "Team", h: "#team" },
+            { l: "Case Studies", h: "#projects" }, { l: "Team", h: "#team" },
             { l: "Contact", h: "#contact" },
           ]} />
           <FooterCol title="Services" links={[

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Section } from "./Section";
-import { Mail, Phone, Github, Linkedin, MapPin, MessageCircle } from "lucide-react";
+import { Phone, Github, Linkedin, MapPin, MessageCircle } from "lucide-react";
 
 export function Contact() {
   const [loading, setLoading] = useState(false);
@@ -45,28 +45,68 @@ export function Contact() {
       description="Tell us about your project. Our team will reach out within 24 hours."
     >
       <div className="grid gap-8 lg:grid-cols-5">
-        <div className="space-y-4 lg:col-span-2">
-          {/* Poojan Sri Para */}
-          <div className="rounded-3xl glass p-5 relative overflow-hidden">
-            <div className="absolute -right-4 -top-4 h-16 w-16 rounded-full bg-gradient-primary opacity-20 blur-xl" />
-            <div className="text-[10px] font-bold text-accent uppercase tracking-widest mb-3">Poojan Sri Para</div>
-            <div className="grid gap-2">
-              <ContactLink Icon={Mail} label="Email" value="parapoojansri@gmail.com" href="mailto:parapoojansri@gmail.com" />
-              <ContactLink Icon={Phone} label="Phone" value="+91 8309529483" href="tel:+918309529483" />
-              <ContactLink Icon={Github} label="GitHub" value="parapoojansri-hue" href="https://github.com/parapoojansri-hue" />
-              <ContactLink Icon={Linkedin} label="LinkedIn" value="poojan-sri-para" href="https://www.linkedin.com/in/poojan-sri-para-9b84a7399" />
+        <div className="space-y-5 lg:col-span-2">
+
+          {/* Poojan Sri Para — cyan theme */}
+          <div className="group relative overflow-hidden rounded-3xl border border-cyan-500/20 bg-gradient-to-br from-cyan-500/10 via-cyan-500/5 to-transparent p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/40 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]">
+            <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-cyan-500/20 blur-2xl transition-all group-hover:bg-cyan-500/30" />
+            <div className="absolute -left-6 -bottom-6 h-20 w-20 rounded-full bg-cyan-500/10 blur-2xl" />
+            <div className="relative flex items-center gap-4 mb-5">
+              <div className="relative flex-shrink-0">
+                <div className="absolute inset-0 rounded-2xl bg-cyan-500/30 blur-lg" />
+                <div className="relative grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-cyan-400 to-cyan-600 font-display text-base font-bold text-white shadow-lg">PS</div>
+              </div>
+              <div>
+                <div className="font-display text-base font-bold text-foreground">Poojan Sri Para</div>
+                <div className="text-[10px] uppercase tracking-[0.2em] text-cyan-400 font-semibold">Vice President</div>
+              </div>
+            </div>
+            <div className="relative grid gap-2.5">
+              <ContactLink Icon={Phone} label="Phone" value="+91 8309529483" href="tel:+918309529483" accent="cyan" />
+              <ContactLink Icon={Github} label="GitHub" value="parapoojansri-hue" href="https://github.com/parapoojansri-hue" accent="cyan" />
+              <ContactLink Icon={Linkedin} label="LinkedIn" value="poojan-sri-para" href="https://www.linkedin.com/in/poojan-sri-para-9b84a7399" accent="cyan" />
             </div>
           </div>
 
-          {/* Arvind Swamy */}
-          <div className="rounded-3xl glass p-5 relative overflow-hidden">
-            <div className="absolute -right-4 -top-4 h-16 w-16 rounded-full bg-gradient-primary opacity-20 blur-xl" />
-            <div className="text-[10px] font-bold text-accent uppercase tracking-widest mb-3">Arvind Swamy</div>
-            <div className="grid gap-2">
-              <ContactLink Icon={Mail} label="Email" value="arvindswamy@gmail.com" href="mailto:arvindswamy@gmail.com" />
-              <ContactLink Icon={Phone} label="Phone" value="+91 8522855282" href="tel:+918522855282" />
-              <ContactLink Icon={Github} label="GitHub" value="iarvindswamy" href="https://github.com/iarvindswamy" />
-              <ContactLink Icon={Linkedin} label="LinkedIn" value="iarvindswamy" href="https://www.linkedin.com/in/iarvindswamy" />
+          {/* Arvind Swamy — purple theme */}
+          <div className="group relative overflow-hidden rounded-3xl border border-purple-500/20 bg-gradient-to-br from-purple-500/10 via-purple-500/5 to-transparent p-6 transition-all duration-300 hover:-translate-y-1 hover:border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]">
+            <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-purple-500/20 blur-2xl transition-all group-hover:bg-purple-500/30" />
+            <div className="absolute -left-6 -bottom-6 h-20 w-20 rounded-full bg-purple-500/10 blur-2xl" />
+            <div className="relative flex items-center gap-4 mb-5">
+              <div className="relative flex-shrink-0">
+                <div className="absolute inset-0 rounded-2xl bg-purple-500/30 blur-lg" />
+                <div className="relative grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-purple-400 to-purple-600 font-display text-base font-bold text-white shadow-lg">AS</div>
+              </div>
+              <div>
+                <div className="font-display text-base font-bold text-foreground">Arvind Swamy</div>
+                <div className="text-[10px] uppercase tracking-[0.2em] text-purple-400 font-semibold">CEO</div>
+              </div>
+            </div>
+            <div className="relative grid gap-2.5">
+              <ContactLink Icon={Phone} label="Phone" value="+91 8522855282" href="tel:+918522855282" accent="purple" />
+              <ContactLink Icon={Github} label="GitHub" value="iarvindswamy" href="https://github.com/iarvindswamy" accent="purple" />
+              <ContactLink Icon={Linkedin} label="LinkedIn" value="iarvindswamy" href="https://www.linkedin.com/in/iarvindswamy" accent="purple" />
+            </div>
+          </div>
+
+          {/* Gade Pavan Kumar — emerald theme */}
+          <div className="group relative overflow-hidden rounded-3xl border border-emerald-500/20 bg-gradient-to-br from-emerald-500/10 via-emerald-500/5 to-transparent p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500/40 hover:shadow-[0_0_30px_rgba(16,185,129,0.15)]">
+            <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-emerald-500/20 blur-2xl transition-all group-hover:bg-emerald-500/30" />
+            <div className="absolute -left-6 -bottom-6 h-20 w-20 rounded-full bg-emerald-500/10 blur-2xl" />
+            <div className="relative flex items-center gap-4 mb-5">
+              <div className="relative flex-shrink-0">
+                <div className="absolute inset-0 rounded-2xl bg-emerald-500/30 blur-lg" />
+                <div className="relative grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 font-display text-base font-bold text-white shadow-lg">PK</div>
+              </div>
+              <div>
+                <div className="font-display text-base font-bold text-foreground">Gade Pavan Kumar</div>
+                <div className="text-[10px] uppercase tracking-[0.2em] text-emerald-400 font-semibold">Backend Engineer</div>
+              </div>
+            </div>
+            <div className="relative grid gap-2.5">
+              <ContactLink Icon={Phone} label="Phone" value="+91 8522927443" href="tel:+918522927443" accent="emerald" />
+              <ContactLink Icon={Github} label="GitHub" value="pavankumargade09" href="https://github.com/pavankumargade09" accent="emerald" />
+              <ContactLink Icon={Linkedin} label="LinkedIn" value="pavankumargade09" href="https://www.linkedin.com/in/pavankumargade09/" accent="emerald" />
             </div>
           </div>
         </div>
@@ -135,16 +175,33 @@ function Field({ label, name, type = "text", placeholder }: { label: string; nam
   );
 }
 
-function ContactLink({ Icon, label, value, href }: { Icon: any; label: string; value: string; href: string }) {
+function ContactLink({ Icon, label, value, href, accent = "cyan" }: { Icon: any; label: string; value: string; href: string; accent?: "cyan" | "purple" | "emerald" }) {
+  const iconBg = {
+    cyan: "bg-gradient-to-br from-cyan-400 to-cyan-600",
+    purple: "bg-gradient-to-br from-purple-400 to-purple-600",
+    emerald: "bg-gradient-to-br from-emerald-400 to-emerald-600",
+  }[accent];
+  const hoverText = {
+    cyan: "group-hover:text-cyan-400",
+    purple: "group-hover:text-purple-400",
+    emerald: "group-hover:text-emerald-400",
+  }[accent];
+  const borderHover = {
+    cyan: "hover:border-cyan-500/30 hover:bg-cyan-500/5",
+    purple: "hover:border-purple-500/30 hover:bg-purple-500/5",
+    emerald: "hover:border-emerald-500/30 hover:bg-emerald-500/5",
+  }[accent];
+
   return (
-    <a href={href} target="_blank" rel="noreferrer" className="flex items-center gap-3.5 rounded-xl bg-secondary/30 hover:bg-secondary/60 border border-border/50 p-3.5 transition-colors">
-      <div className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-primary text-primary-foreground shadow-glow">
-        <Icon className="h-4 w-4" />
+    <a href={href} target="_blank" rel="noreferrer" className={`group flex items-center gap-3.5 rounded-xl border border-border/40 bg-secondary/20 p-3 transition-all duration-200 ${borderHover}`}>
+      <div className={`grid h-8 w-8 flex-shrink-0 place-items-center rounded-lg ${iconBg} text-white shadow-md`}>
+        <Icon className="h-3.5 w-3.5" />
       </div>
-      <div className="flex-1">
+      <div className="flex-1 min-w-0">
         <div className="text-[9px] uppercase tracking-widest text-muted-foreground">{label}</div>
-        <div className="text-xs font-semibold text-foreground">{value}</div>
+        <div className={`text-xs font-semibold text-foreground truncate transition-colors ${hoverText}`}>{value}</div>
       </div>
+      <span className="text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity text-xs">→</span>
     </a>
   );
 }
