@@ -1,13 +1,13 @@
 import { Section } from "./Section";
-import { Linkedin, Phone } from "lucide-react";
+import { Linkedin, Phone, Mail } from "lucide-react";
 
 const team = [
-  { name: "Poojan Sri Para", role: "Vice President",                 initials: "PS", gradient: "from-amber-400 to-orange-500",   border: "border-amber-500/25 hover:border-amber-400/50",   bg: "from-amber-500/10 via-amber-500/4 to-transparent",   glow: "hover:shadow-[0_0_35px_rgba(245,158,11,0.2)]",   tag: "text-amber-300",  socials: [{ type: "linkedin", href: "https://www.linkedin.com/in/poojan-sri-para-9b84a7399" }, { type: "phone", href: "tel:+918309529483" }] },
-  { name: "Arvind Swamy",    role: "CEO",                            initials: "AS", gradient: "from-violet-400 to-purple-600",  border: "border-violet-500/25 hover:border-violet-400/50", bg: "from-violet-500/10 via-violet-500/4 to-transparent", glow: "hover:shadow-[0_0_35px_rgba(139,92,246,0.2)]",  tag: "text-violet-300", socials: [{ type: "linkedin", href: "https://www.linkedin.com/in/iarvindswamy" }, { type: "phone", href: "tel:+918522855282" }] },
-  { name: "Lead Engineer",   role: "Full-Stack & AI",                initials: "LE", gradient: "from-cyan-400 to-blue-600",     border: "border-cyan-500/25 hover:border-cyan-400/50",    bg: "from-cyan-500/10 via-cyan-500/4 to-transparent",   glow: "hover:shadow-[0_0_35px_rgba(6,182,212,0.2)]",   tag: "text-cyan-300",   socials: [{ type: "linkedin", href: "#" }, { type: "phone", href: "tel:+919999999999" }] },
-  { name: "Frontend Engineer", role: "UI/UX & Web",                  initials: "FE", gradient: "from-pink-400 to-rose-600",    border: "border-pink-500/25 hover:border-pink-400/50",    bg: "from-pink-500/10 via-pink-500/4 to-transparent",   glow: "hover:shadow-[0_0_35px_rgba(236,72,153,0.2)]",  tag: "text-pink-300",   socials: [{ type: "linkedin", href: "#" }, { type: "phone", href: "tel:+919999999999" }] },
-  { name: "Gade Pavan Kumar", role: "Backend Engineer · APIs & Cloud", initials: "PK", gradient: "from-emerald-400 to-teal-600", border: "border-emerald-500/25 hover:border-emerald-400/50", bg: "from-emerald-500/10 via-emerald-500/4 to-transparent", glow: "hover:shadow-[0_0_35px_rgba(16,185,129,0.2)]", tag: "text-emerald-300", socials: [{ type: "linkedin", href: "https://www.linkedin.com/in/pavankumargade09/" }, { type: "phone", href: "tel:+918522927443" }] },
-  { name: "Client Manager",  role: "Partnerships",                   initials: "CM", gradient: "from-indigo-400 to-blue-600",  border: "border-indigo-500/25 hover:border-indigo-400/50", bg: "from-indigo-500/10 via-indigo-500/4 to-transparent", glow: "hover:shadow-[0_0_35px_rgba(99,102,241,0.2)]",  tag: "text-indigo-300", socials: [{ type: "linkedin", href: "#" }, { type: "phone", href: "tel:+919999999999" }] },
+  { name: "Poojan Sri Para", role: "Co-Founder, Investor & Vice President", initials: "PS", gradient: "from-amber-400 to-orange-500", border: "border-amber-500/25 hover:border-amber-400/50", bg: "from-amber-500/10 via-amber-500/4 to-transparent", glow: "hover:shadow-[0_0_35px_rgba(245,158,11,0.2)]", tag: "text-amber-300", socials: [{ type: "linkedin", href: "https://www.linkedin.com/in/poojan-sri-para-9b84a7399" }, { type: "phone", href: "tel:+918309529483" }, { type: "mail", href: "mailto:poojan@virtechnologies.in" }] },
+  { name: "Arvind Swamy", role: "CEO & Founder", initials: "AS", gradient: "from-violet-400 to-purple-600", border: "border-violet-500/25 hover:border-violet-400/50", bg: "from-violet-500/10 via-violet-500/4 to-transparent", glow: "hover:shadow-[0_0_35px_rgba(139,92,246,0.2)]", tag: "text-violet-300", socials: [{ type: "linkedin", href: "https://www.linkedin.com/in/iarvindswamy" }, { type: "phone", href: "tel:+918522855282" }, { type: "mail", href: "mailto:ceo@virtechnologies.in" }] },
+  { name: "Brahmaiah", role: "CTO", initials: "BR", gradient: "from-cyan-400 to-blue-600", border: "border-cyan-500/25 hover:border-cyan-400/50", bg: "from-cyan-500/10 via-cyan-500/4 to-transparent", glow: "hover:shadow-[0_0_35px_rgba(6,182,212,0.2)]", tag: "text-cyan-300", socials: [{ type: "mail", href: "mailto:cto@virtechnologies.in" }] },
+  { name: "Raghu", role: "CFO", initials: "RG", gradient: "from-indigo-400 to-blue-600", border: "border-indigo-500/25 hover:border-indigo-400/50", bg: "from-indigo-500/10 via-indigo-500/4 to-transparent", glow: "hover:shadow-[0_0_35px_rgba(99,102,241,0.2)]", tag: "text-indigo-300", socials: [{ type: "mail", href: "mailto:cfo@virtechnologies.in" }] },
+  { name: "Hareesh", role: "COO", initials: "HR", gradient: "from-pink-400 to-rose-600", border: "border-pink-500/25 hover:border-pink-400/50", bg: "from-pink-500/10 via-pink-500/4 to-transparent", glow: "hover:shadow-[0_0_35px_rgba(236,72,153,0.2)]", tag: "text-pink-300", socials: [{ type: "mail", href: "mailto:coo@virtechnologies.in" }] },
+  { name: "Gade Pavan Kumar", role: "CMO", initials: "PK", gradient: "from-emerald-400 to-teal-600", border: "border-emerald-500/25 hover:border-emerald-400/50", bg: "from-emerald-500/10 via-emerald-500/4 to-transparent", glow: "hover:shadow-[0_0_35px_rgba(16,185,129,0.2)]", tag: "text-emerald-300", socials: [{ type: "linkedin", href: "https://www.linkedin.com/in/pavankumargade09/" }, { type: "phone", href: "tel:+918522927443" }, { type: "mail", href: "mailto:cmo@virtechnologies.in" }] },
 ];
 
 export function Team() {
@@ -46,7 +46,9 @@ export function Team() {
               {/* Social links */}
               <div className="flex items-center justify-center gap-2.5">
                 {m.socials.map((social) => {
-                  const Icon = social.type === "linkedin" ? Linkedin : Phone;
+                  let Icon = Phone;
+                  if (social.type === "linkedin") Icon = Linkedin;
+                  else if (social.type === "mail") Icon = Mail;
                   return (
                     <a
                       key={social.type}

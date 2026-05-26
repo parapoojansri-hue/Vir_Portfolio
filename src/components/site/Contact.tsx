@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Section } from "./Section";
-import { Phone, Github, Linkedin, MapPin, MessageCircle } from "lucide-react";
+import { Phone, Github, Linkedin, MapPin, MessageCircle, Mail } from "lucide-react";
 
 export function Contact() {
   const [loading, setLoading] = useState(false);
@@ -58,11 +58,12 @@ export function Contact() {
               </div>
               <div>
                 <div className="font-display text-base font-bold text-foreground">Poojan Sri Para</div>
-                <div className="text-[10px] uppercase tracking-[0.2em] text-cyan-400 font-semibold">Vice President</div>
+                <div className="text-[10px] uppercase tracking-[0.2em] text-cyan-400 font-semibold">Co-Founder, Investor & Vice President</div>
               </div>
             </div>
             <div className="relative grid gap-2.5">
               <ContactLink Icon={Phone} label="Phone" value="+91 8309529483" href="tel:+918309529483" accent="cyan" />
+              <ContactLink Icon={Mail} label="Email" value="poojan@virtechnologies.in" href="mailto:poojan@virtechnologies.in" accent="cyan" />
               <ContactLink Icon={Github} label="GitHub" value="parapoojansri-hue" href="https://github.com/parapoojansri-hue" accent="cyan" />
               <ContactLink Icon={Linkedin} label="LinkedIn" value="poojan-sri-para" href="https://www.linkedin.com/in/poojan-sri-para-9b84a7399" accent="cyan" />
             </div>
@@ -79,11 +80,12 @@ export function Contact() {
               </div>
               <div>
                 <div className="font-display text-base font-bold text-foreground">Arvind Swamy</div>
-                <div className="text-[10px] uppercase tracking-[0.2em] text-purple-400 font-semibold">CEO</div>
+                <div className="text-[10px] uppercase tracking-[0.2em] text-purple-400 font-semibold">CEO & Founder</div>
               </div>
             </div>
             <div className="relative grid gap-2.5">
               <ContactLink Icon={Phone} label="Phone" value="+91 8522855282" href="tel:+918522855282" accent="purple" />
+              <ContactLink Icon={Mail} label="Email" value="ceo@virtechnologies.in" href="mailto:ceo@virtechnologies.in" accent="purple" />
               <ContactLink Icon={Github} label="GitHub" value="iarvindswamy" href="https://github.com/iarvindswamy" accent="purple" />
               <ContactLink Icon={Linkedin} label="LinkedIn" value="iarvindswamy" href="https://www.linkedin.com/in/iarvindswamy" accent="purple" />
             </div>
@@ -100,11 +102,12 @@ export function Contact() {
               </div>
               <div>
                 <div className="font-display text-base font-bold text-foreground">Gade Pavan Kumar</div>
-                <div className="text-[10px] uppercase tracking-[0.2em] text-emerald-400 font-semibold">Backend Engineer</div>
+                <div className="text-[10px] uppercase tracking-[0.2em] text-emerald-400 font-semibold">CMO</div>
               </div>
             </div>
             <div className="relative grid gap-2.5">
               <ContactLink Icon={Phone} label="Phone" value="+91 8522927443" href="tel:+918522927443" accent="emerald" />
+              <ContactLink Icon={Mail} label="Email" value="cmo@virtechnologies.in" href="mailto:cmo@virtechnologies.in" accent="emerald" />
               <ContactLink Icon={Github} label="GitHub" value="pavankumargade09" href="https://github.com/pavankumargade09" accent="emerald" />
               <ContactLink Icon={Linkedin} label="LinkedIn" value="pavankumargade09" href="https://www.linkedin.com/in/pavankumargade09/" accent="emerald" />
             </div>
